@@ -1,0 +1,83 @@
+#mainCont{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html{
+    /* color-scheme: dark; */
+}
+
+#editor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0vw 5vw;
+    border: 1px solid rgb(163, 163, 163);
+    overflow: auto;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 8px rgb(172, 172, 172);
+}
+
+#editor .toolBar{
+    box-shadow: 0px 1px 2px rgb(166, 166, 166);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#cursor{
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    opacity: 0;
+}
+
+@keyframes blinkCursor {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#cursor.animated{
+    animation: blinkCursor 0.7s infinite alternate;
+}
+
+#editor .textArea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    height: 60vh;
+    overflow: hidden;
+    cursor: text;
+}
+
+#editor .textArea .block{
+    outline: none;
+    border: none;
+}
+
+.btnGroup{
+    display: flex;
+}
+
+.toolBarBtn{
+    padding: 10px 20px;
+    border: none;
+    margin: 0px;
+    background: none;
+}
+
+.toolBarBtn:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.toolBarBtn.selected{
+    background-color: rgb(156, 224, 250);
+}

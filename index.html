@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Article Editor</title>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainCont">
+        <div id="editor">
+            <div class="toolBar">
+                <div class="btnGroup">
+                    <button type="button" class="toolBarBtn" onclick="setBold()">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                    <button type="button" class="toolBarBtn">
+                        <i class="fa-solid fa-italic" onclick="setItalic()"></i>
+                    </button>
+                    <button type="button" class="toolBarBtn" onclick="setUnderline()">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- <input name="" class="textArea" id=""/> -->
+            <!-- <textarea name="" id="textArea" class="textArea" id="" cols="30" rows="30"></textarea> -->
+            <div name="" id="textArea" class="textArea" tabindex="-1">
+                <p class="block" contenteditable="true" spellcheck="false"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/7d3f73a100.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
